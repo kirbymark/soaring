@@ -4,6 +4,7 @@
 		<title>My first web page</title>
 		<!-- This is a comment, by the way -->
 		<link rel="stylesheet" href="css/style2.css">
+		<script src="script2.js"></script>
 	</head>
 
 	<body>
@@ -31,8 +32,57 @@
 		<p><a href="http://www.htmldog.com"><img src="http://www.htmldog.com/badge1.gif" width="120" height="90" alt="HTML Dog"></a></p>
 		<p><a href="http://www.htmldog.com">html dog is here</a></p>
 		
+		<blockquote>
+			<p>He wants to play with his <mark>Legos</mark></p>
+		</blockquote>
 
+		<ul>
+			<li><a href="here.html" tabindex="1">Here</a></li>
+			<li><a href="there.html" tabindex="3">There</a></li>
+			<li><a href="limbo.html" tabindex="2">Limbo</a></li>
+		</ul>
+		
+		<p>I'm really bad at writing link text. <a href="inept.html" title="Why I'm rubbish at writing link text: An explanation and an apology.">Click here</a> to find out more.</p>
+		
 		<p style="color: red">Inline CSS Example - this should be red</p>
+		
+		<table>
+			<caption>Locust mating habits</caption>
+			<thead>
+				<tr>
+					<td>Header 1</td>
+					<td>Header 2</td>
+					<td>Header 3</td>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>Footer 1</td>
+					<td>Footer 2</td>
+					<td>Footer 3</td>
+				</tr>
+			</tfoot>
+			<tbody>
+			<colgroup>
+				<col>
+				<col class="alternative">
+				<col>
+			</colgroup>
+			<tr>
+				<td>This</td>
+				<td>That</td>
+				<td>The other</td>
+			</tr>
+			<tr>
+				<td>Ladybird</td>
+				<td>Locust</td>
+				<td>Lunch</td>
+			</tr>
+			</tbody>
+		</table>
+		
+		
+		
 		
 		<h3>Some random table</h3>
 		<table>
@@ -63,12 +113,63 @@
 
 		<form action="somescript.php" method="post">
 
-			<p>Name:</p>
-			<p><input name="name" value="Your name"></p>
+			
+			    <fieldset>
+					<legend>Name</legend>
+					<p>First name <input name="firstName"></p>
+					<p>Last name <input name="lastName"></p>
+				</fieldset>
+				<fieldset>
+					<legend>Address</legend>
+					<p>Address <textarea name="address"></textarea></p>
+					<p>Postal code <input name="postcode"></p>
+				</fieldset>
 
 			<p>Comments: </p>
 			<p><textarea rows="10" cols="20" name="comments">Your comments</textarea></p>
 
+			<fieldset>
+					<legend>Location</legend>
+						<p>Country of origin <select name="country"></p>
+							<optgroup label="Africa">
+								<option value="gam">Gambia</option>
+								<option value="mad">Madagascar</option>
+								<option value="nam">Namibia</option>
+							</optgroup>
+							<optgroup label="Europe">
+								<option value="fra">France</option>
+								<option value="rus">Russia</option>
+								<option value="uk">UK</option>
+							</optgroup>
+							<optgroup label="North America">
+								<option value="can">Canada</option>
+								<option value="mex">Mexico</option>
+								<option value="usa">USA</option>
+							</optgroup>
+						</select>
+			</fieldset>
+
+			<p>Search <input type="search" name="search"></p>
+			<p>Telephone Number <input type="tel" name="telephone_number"></p>
+			<p>web address <input type="url" name="web_address"></p>
+			<label for="email_address">Email address</label>
+			<p>email_address <input type="email" placeholder="you@somewhere.com" name="email_address" id="email_address"></p>
+			<p> Number <input type="number" name="quantity" step="2" min="20" max="30"></p>
+			<p> Range <input type="range" name="temperature" min="15" max="25" step="0.5" value="18.5"></p>
+			<p> Color <input name="color" type="color" value="#ff8800"></p>
+			<p> Country <input name="country" list="country_name"></p>
+			<datalist id="country_name">
+				<option value="Afghanistan">
+				<option value="Albania">
+				<option value="Algeria">
+				<option value="Andorra">
+				<option value="Armenia">
+				<option value="Australia">
+				<option value="Austria">
+				<option value="Azerbaijan">
+				<!-- etc. -->
+			</datalist>
+			
 			<p>Are you:</p>
 			<p><input type="radio" name="areyou" value="male"> Male</p>
 			<p><input type="radio" name="areyou" value="female"> Female</p>
@@ -78,6 +179,14 @@
 			<p><input type="submit"></p>
 
 		</form>
+		
+	
+<script>
+    alert("Hello, world.");
+</script>
+
+
+		
 
 	</body>
 
