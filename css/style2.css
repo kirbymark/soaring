@@ -1,9 +1,10 @@
 body {
-	font-family: arial, helvetica, sans-serif;
-	font-size: 14px;
-	background-color: #ffc;
-	margin: 20px;
-	padding: 0;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: black;
+    background-color: #ffc;
+    margin: 20px;
+    padding: 0;
 }
 
 /* This is a comment, by the way */
@@ -13,14 +14,18 @@ p {
 }
 
 h1 {
-	background-color: aquamarine;
-	font-size: 4em;
-	margin: 0;
-	margin-bottom: 3px;
-	padding: 4px;
-	font-style: italic;
-	text-align: center;
-	border-bottom: 0.5em solid #0D626C;
+    color: #ffc;
+    background-color: #900;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 4px;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 0.5em;
+    border-bottom-style: solid;
+    border-bottom-width: 0.5em;
+    border-bottom-color: #c00;
 }
 
 h2 {
@@ -31,6 +36,7 @@ h2 {
     padding: 2px;
     padding-left: 14px;
 }
+
 
 h3 {
     color: #999;
